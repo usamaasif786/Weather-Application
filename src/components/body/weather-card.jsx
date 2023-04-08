@@ -40,15 +40,15 @@ const WeatherCard = ({weather}) => {
     //   </div>
     // </div>
     <div className='card'>
-      <div class="weather">
-        <h2 class="city">Weather In {weather?(weather.name): "-"} ({weather?(weather.sys.country): "-"})</h2>
-        <h1 class="temp">{weather? Math.round(weather.main?.temp - 273.15): ''}°C</h1>
-        <img src={`https://openweathermap.org/img/w/${weather?(weather.weather[0].icon): "unknown".icon}.png`} alt="Icons" />
-        <div class="description">{weather? (weather.weather[0].description): "-"}</div>
-        <div class="humidity">Humidity: {weather? (weather.main?.humidity): '-'}%</div>
-        <div class="last">
-          <div class="wind">Wind Speed: {weather? (weather.wind?.speed): '-'} km/h</div>
-          <button class="detail">Detail</button>
+      <div className="weather">
+        <h2 className="city">Weather In {weather?(weather.name): "-"} ({weather?(weather.sys.country): "-"})</h2>
+        <h1 className="temp">{weather? Math.round(weather.main?.temp - 273.15): ''}°C</h1>
+        <img src={`https://openweathermap.org/img/w/${weather?(weather.weather[0].icon): "unknown".icon}.png`}  style={{ width: '80px', height: 'auto' }}alt="Icons" />
+        <div className="description">{weather? (weather.weather[0].description): "-"}</div>
+        <div className="humidity">Humidity: {weather? (weather.main?.humidity): '-'}%</div>
+        <div className="last">
+          <div className="wind">Wind Speed: {weather? (weather.wind?.speed): '-'} km/h</div>
+          <button className="detail">Detail</button>
         </div>
       </div>
     </div>

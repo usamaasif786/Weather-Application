@@ -32,10 +32,6 @@ body {
   /* flex-direction: column; */
 }
 
-ion-icon {
-  margin-top: 5px;
-  font-size: 25px;
-}
 .weather {
   margin-top: 10px;
 }
@@ -44,7 +40,7 @@ ion-icon {
 }
 .search {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .search input {
@@ -59,7 +55,6 @@ ion-icon {
   width: calc(100% - 90px);
 }
 .search button {
-  margin: 0.5em;
   border-radius: 50%;
   border: none;
   height: 44px;

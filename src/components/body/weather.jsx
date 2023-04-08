@@ -26,14 +26,16 @@ import SearchIcon from '@mui/icons-material/Search';
       <div className="App">
         <form onSubmit= {handleSubmit} className='card search'>
           <h1 className='app_heading' >Weather App</h1> 
-          <input
-            value={city}
-            onChange={handleChange}
-            class="search-bar"
-            type="text"
-            placeholder="Search by Location"
-          />
-          <button class="search-btn" type="submit" onChange={handleChange}><SearchIcon/></button>
+          <div className='d-flex justify-content-between mt-4'>
+            <input
+              value={city}
+              onChange={handleChange}
+              class="search-bar"
+              type="text"
+              placeholder="Search by Location"
+            />
+            <button class="search-btn" type="submit" onChange={handleChange}><SearchIcon/></button>
+          </div>
         </form>
         {error? (
           <p className='error'>{error}</p>
